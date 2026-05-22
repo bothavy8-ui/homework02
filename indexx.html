@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Practice Webpage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Student Practice Webpage</h1>
+        <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+    </div>
+
+    <div class="section">
+        <p class="font">Image Section</p>
+        <img src="https://i.pinimg.com/736x/16/2f/64/162f64005b28e207254998607350c274.jpg" alt="Japan View">
+    </div>
+
+    <div class="section">
+        <p class="font">Image Section Circle</p>
+        <img src="https://i.pinimg.com/736x/16/2f/64/162f64005b28e207254998607350c274.jpg" alt="Japan View" id="img1">
+    </div>
+
+    <div class="section">
+        <p class="font">Image Section Oval</p>
+        <img src="https://i.pinimg.com/736x/16/2f/64/162f64005b28e207254998607350c274.jpg" alt="Japan View" id="img2">
+    </div>
+
+    <div class="section">
+        <p class="font">Advanced Table</p>
+
+        <table cellspacing="8">
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+
+            <tr>
+                <th>Math</th>
+                <th>CS</th>
+            </tr>
+
+            <tr>
+                <td>Alice</td>
+                <td>90</td>
+                <td>95</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Bob</td>
+                <td>80</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+
+        <form action="https://formsubmit.co/bothavy8" method="post">
+
+            <p class="font">Form 1: Basic Form</p>
+
+            <label for="name">
+                Name <span class="red">*</span>
+            </label>
+            <input type="text" required id="name" name="name">
+
+            <br><br>
+
+            <label for="email">
+                Email <span class="red">*</span>
+            </label>
+            <input type="email" required id="email" name="email">
+
+            <br><br>
+
+            <label for="pw">
+                Password <span class="red">*</span>
+            </label>
+            <input type="password" required id="pw" name="pw">
+
+            <br><br>
+
+            <label for="file">Upload File</label>
+            <input type="file" id="file">
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </div>
+
+    <div class="section">
+
+        <form action="https://formsubmit.co/bothavy8" method="post">
+
+            <p class="font">Form 2: Survey Form</p>
+
+            <label>
+                Choose Course <span class="red">*</span>
+            </label>
+
+            <select required>
+                <option value="">-- Select --</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+
+            <br><br>
+
+            <label>Gender</label>
+
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label class="inline" for="male">Male</label>
+
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label class="inline" for="female">Female</label>
+
+            <br><br>
+
+            <label>Skills</label>
+
+            <input type="checkbox" id="html" name="Skill" value="HTML">
+            <label class="inline" for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="Skill" value="CSS">
+            <label class="inline" for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="Skill" value="JavaScript">
+            <label class="inline" for="js">JS</label>
+
+            <br><br>
+
+            <label for="ph">
+                Phone <span class="red">*</span>
+            </label>
+
+            <input type="text" required id="ph" name="ph">
+
+            <br><br>
+
+            <label for="Contact">Message:</label>
+
+            <textarea id="Contact" name="message" rows="5"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Send">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
