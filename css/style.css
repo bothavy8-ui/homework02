@@ -34,8 +34,9 @@ img{
 #img2{
     width:350px;
     height:180px;
-    object-fit:cover;
-    clip-path:path("M 0,30 Q 175,0 350,30 L 350,150 Q 175,180 0,150 Z");
+    border-radius: 30%;
+    /* object-fit:cover;
+    clip-path:path("M 0,30 Q 175,0 350,30 L 350,150 Q 175,180 0,150 Z"); */
 }
 table{
     width:100%;
