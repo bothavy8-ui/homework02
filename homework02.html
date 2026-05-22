@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+body{
+    margin:0;
+    background-color:rgb(221,222,211);
+    font-family:sans-serif;
+}
+.header{
+    background:#eaa5bb;
+    color:white;
+    text-align:center;
+    padding:10px;
+    border-radius:0 0 10px 10px;
+}
+.section{
+    background:white;
+    margin:30px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+.font{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    object-fit:cover;
+}
+#img1{
+    border-radius:50%;
+}
+#img2{
+    width:350px;
+    height:180px;
+    object-fit:cover;
+    clip-path:path("M 0,30 Q 175,0 350,30 L 350,150 Q 175,180 0,150 Z");
+}
+table{
+    width:100%;
+    text-align:center;
+    border-collapse:collapse;
+}
+table,th,td{
+    border:1px solid rgb(222,222,222);
+}
+th,td{
+    padding:10px;
+}
+th{
+    background:#85c8c9;
+    color:white;
+}
+
+form{
+    width:400px;
+    margin:auto;
+    padding:20px;
+}
+.form-row{
+    margin-bottom:15px;
+}
+label{
+    display:block;
+    margin-bottom:5px;
+}
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+}
+input[type="submit"],
+input[type="reset"]{
+    width:auto;
+    padding:10px 20px;
+    background:#6296e0;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background:rgb(3,132,238);
+} 
+/* for make the star red(class)*/
+.red{
+    color:red;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Student Practice Webpage</h1>
+        <p>HTML + CSS Practice(Forms + Table Advanced)</p>
+    </div>
+    <div class="section">
+        <p class="font">Image section</p>
+        <img src="https://i.pinimg.com/736x/16/2f/64/162f64005b28e207254998607350c274.jpg" alt="japan vide" >
+    </div>
+    <div class="section">
+        <p class="font">Image section Circle</p>
+        <img src="https://i.pinimg.com/736x/16/2f/64/162f64005b28e207254998607350c274.jpg" alt="japan vide" id="img1">
+    </div>
+    <div class="section">
+        <p class="font">Image section Oval</p>
+        <img src="https://i.pinimg.com/736x/16/2f/64/162f64005b28e207254998607350c274.jpg" alt="japan vide" id="img2">
+    </div>
+
+    <div class="section">
+        <p class="font">Advanced Table</p>
+        <table cellspacing="8" cellrow>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+                <th rowspan="2 ">Grade</th>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <th>CS</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>90</td>
+                <td>95</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>80</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <form action="https://formsubmit.co/bothavy8" method="post">
+            <p class="font">Form 1: Basic Form</p>
+            <div class="form-row">
+                <label for="name" id="style">Name  <span class="red">*</span></label> <br>
+                <input type="text" required id="name" name="name" >
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="email">Email<span class="red">*</span></label> <br>
+                <input type="email" required id="email" name="email" >
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="pw">Password<span class="red">*</span></label> <br>
+                <input type="password" required id="pw" name="pw" >
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="file">Upload file  </label> <br>
+                <input type="file" placeholder="no file choosen" >
+            </div>
+            <br>
+            <span class="form-row"> 
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </span>
+            </form>
+        </form>
+    </div>
+
+    <div class="section">
+        <form action="https://formsubmit.co/bothavy8" method="post">
+            <p class="font">Form 2: Survey Form</p>
+            <div class="form-row">
+                <label>Choose Course <span class="red">*</span></label>
+                <select required>
+                <option value="">-- Select --</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="Gender">Gender</label><br>
+                <input type="radio" id="male" name="Gender" value="Gender" >
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Gender" >
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-row">
+                <label for="Skill">Skills </label><br>
+                <input type="checkbox" id="html" name="Skill" value="Skill" >
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="Skill" value="Skill" >
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="Skill" value="Skill" >
+                <label for="other">JS</label>
+            </div>
+
+            <div class="form-row">
+                <label for="ph">Phone<span class="red">*</span></label> <br>
+                <input type="text" required id="ph" name="ph" >
+            </div>
+            <br>
+            <span class="form-row">
+                <label for="Contact-message">Message:</label>
+                <textarea id="Contact" name="message"  rows="5" cols="50"></textarea>
+            </span>
+            <span class="form-row"> 
+                <input type="submit" value="Send">
+            </span>
+            </form>
+    </div>
+</body>
+</html>

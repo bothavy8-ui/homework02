@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    background-color:rgb(221,222,211);
+    font-family:sans-serif;
+}
+.header{
+    background:#eaa5bb;
+    color:white;
+    text-align:center;
+    padding:10px;
+    border-radius:0 0 10px 10px;
+}
+.section{
+    background:white;
+    margin:30px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+.font{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    object-fit:cover;
+}
+#img1{
+    border-radius:50%;
+}
+#img2{
+    width:350px;
+    height:180px;
+    object-fit:cover;
+    clip-path:path("M 0,30 Q 175,0 350,30 L 350,150 Q 175,180 0,150 Z");
+}
+table{
+    width:100%;
+    text-align:center;
+    border-collapse:collapse;
+}
+table,th,td{
+    border:1px solid rgb(222,222,222);
+}
+th,td{
+    padding:10px;
+}
+th{
+    background:#85c8c9;
+    color:white;
+}
+
+form{
+    width:400px;
+    margin:auto;
+    padding:20px;
+}
+.form-row{
+    margin-bottom:15px;
+}
+label{
+    display:block;
+    margin-bottom:5px;
+}
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+}
+input[type="submit"],
+input[type="reset"]{
+    width:auto;
+    padding:10px 20px;
+    background:#6296e0;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background:rgb(3,132,238);
+} 
+/* for make the star red(class)*/
+.red{
+    color:red;
+}
